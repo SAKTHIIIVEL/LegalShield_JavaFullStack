@@ -149,6 +149,10 @@ function App() {
     setIsLoggedIn(false);
   };
 
+  const openPopup = () =>{
+    window.open('contact.html', 'Contact Form', 'width=1200,height=700,left=300,top=100');
+  }
+
   return (
     <div className="rental-guide-container">
       <header className="header">
@@ -158,7 +162,7 @@ function App() {
         </div>
         <nav className="nav">
           <a href="#">Home</a>
-          <a href="contact.html">Contact Us</a>
+          <a href="#" onClick={openPopup}>Contact Us</a>
           <a href="#" onClick={scrollToBottom}>About</a>
         </nav>
         <div className="btn">

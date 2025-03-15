@@ -181,7 +181,7 @@ function App() {
 
       <main className="main-content">
         <div className="image-container">
-          <img src="/image/tvk.jpg" alt="House Keys" className="house-keys-image" />
+          <img src="/image/home.jpg" alt="House Keys" className="house-keys-image" />
         </div>
         <div className="text-content">
           <h1 className="title">A COMPLETE GUIDE TO RENTING OUT PROPERTY</h1>

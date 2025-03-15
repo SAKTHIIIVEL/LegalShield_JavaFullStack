@@ -1,0 +1,73 @@
+.lease-terms-container {
+  font-family: sans-serif;
+  border: 1px solid #1d1a1a;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: #eee1e1;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.terms-section h2,
+.lease-term h3 {
+  margin-bottom: 25px;
+}
+
+.lease-end-type {
+  margin-bottom: 20px;
+}
+
+.lease-end-type p {
+  margin-bottom: 10px;
+}
+
+.type-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  margin-right: 10px;
+  border: 2px solid #1d1919;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.type-button:hover {
+  background-color: #ee8d3e;
+  transform: scale(1.05);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.early-possession {
+  margin-top: 20px;
+}
+
+.early-possession p {
+  margin-bottom: 10px;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+}

@@ -1,0 +1,314 @@
+
+
+.rental-guide-container {
+  font-family: sans-serif;
+  display: flex;
+  font-size: 10px;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 40px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px; /* Ensure width and height are equal */
+  height: 60px; 
+  border-radius: 50%; /* Ensures a perfect circle */
+  object-fit: cover; /* Prevents distortion */
+  margin-right: 10px;
+  border: 2px solid #333; /* Optional border */
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 35px; 
+}
+
+.nav a {
+  margin: 0 15px;
+  font-size: 20px; 
+  text-decoration: none;
+  color: #333;
+}
+.nav a:hover{
+  color: #2199a5;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.btn {
+  display: flex;
+}
+
+.signup-btn,
+.login-btn {
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #00ccff 0%, #ccffff 100%);
+  color: #181717;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid;
+  cursor: pointer;
+}
+
+.signup-btn:hover,
+.login-btn:hover {
+  background: linear-gradient(to left, #00ccff 0%, #ccffff 100%);
+}
+
+.main-content {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.image-container {
+  margin-bottom: 20px;
+}
+
+.house-keys-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-content .title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-container.expanded .form {
+  width: 50%;
+}
+
+.form {
+  background-color: #d4840b;
+  padding: 40px;
+  border:2px solid;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+  margin-bottom: 20px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #070606;
+  border-radius: 5px;
+}
+
+.form .submit-btn,
+.form .close-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border:1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form .submit-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.form .submit-btn:hover {
+  background-color: #218838;
+}
+
+.form .close-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.form .close-btn:hover {
+  background-color: #c82333;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  flex-grow: 1;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.house-keys-image {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.text-content {
+  flex: 2;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #555;
+}
+#chat-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  height: 300px;
+  margin: 30px auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+#chat-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+#chat-messages {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+#chat-messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+#chat-messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#chat-messages::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+#chat-messages::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.message {
+  padding: 8px 12px;
+  margin-bottom: 5px;
+  border-radius: 18px;
+  max-width: 70%;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Increased message text size */
+}
+
+.user-message {
+  background-color: #e0f7fa;
+}
+
+.bot-message {
+  background-color: #f0f0f0;
+}
+
+.user-message:hover,
+.bot-message:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+#user-input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+  font-size: 16px; /* Increased input text size */
+}
+
+#user-input:focus {
+  outline: none;
+  border-color: #25799a;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#send-button {
+  padding: 8px 15px;
+  background: linear-gradient(to right, #00ccff 0%, #ccffff 100%);
+  border: 1px solid #161111; /* Border added here */
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+}
+
+#send-button:active {
+  transform: translateY(1px);
+}
+#upload-button {
+  padding: 8px 15px;
+  background: linear-gradient(to right, #00ccff 0%, #ccffff 100%);
+  border: 1px solid #161111;
+  color: rgba(0, 0, 0, 0.758);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 20px;
+  margin-left: 5px; /* Add some space between the send and upload buttons */
+}
+
+#upload-button:active {
+  transform: translateY(1px);
+}
+
+#upload-button:hover {
+  background: linear-gradient(to left, #00ccff 0%, #ccffff 100%); /* Darker shade on hover */
+}

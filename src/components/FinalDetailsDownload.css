@@ -1,0 +1,252 @@
+/* 🔹 Main Container */
+.final-details-download-container {
+  margin-top: 40px;
+  padding: 25px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Sections */
+.final-details-section,
+.download-section,
+.about-us-section {
+  margin-bottom: 30px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 🔹 Headings */
+.final-details-section h2,
+.download-section h2,
+.about-us-section h2,
+.lease-renewal h3,
+.leased-property h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #3b91b3;
+  padding-bottom: 8px;
+}
+
+/* 🔹 Lease Renewal Options */
+.renewal-options {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.renewal-button {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: linear-gradient(to right, #00ccff 0%, #ccffff 100%);
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.renewal-button:hover {
+  background: linear-gradient(to left, #00ccff 0%, #ccffff 100%);
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(102, 255, 0, 0.5);
+}
+
+/* 🔹 Signature Section */
+.e-signature-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.e-signature {
+  width: 100%;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+canvas {
+  width: 100%;
+  border: 2px dashed #ff7300;
+  background: #fff;
+  cursor: crosshair;
+}
+
+#controls-1, #controls-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#clear-button-1, #clear-button-2,
+#save-button-1, #save-button-2 {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 2px solid #ff7300;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff7300, #ff8c42);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+#clear-button-1:hover, #clear-button-2:hover,
+#save-button-1:hover, #save-button-2:hover {
+  background: linear-gradient(135deg, #ff8c42, #ff7300);
+  transform: scale(1.05);
+}
+
+/* 🔹 Download Button */
+.download-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-button {
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.4);
+}
+
+.download-button:hover {
+  background: linear-gradient(135deg, #218838, #28a745);
+  transform: scale(1.05);
+}
+
+/* 🔹 About Us Section */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.legal-docs-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contact-info,
+.social-media {
+  flex: 1;
+}
+
+.legal-docs-logo {
+  width: 60px; /* Ensure width and height are equal */
+  height: 60px; 
+  border-radius: 50%; /* Ensures a perfect circle */
+  object-fit: cover; /* Prevents distortion */
+  margin-right: 10px;
+  border: 2px solid #333; /* Optional border */
+}
+
+.logo-text {
+  display: inline;
+  justify-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.social-icon{
+  color: black;
+}
+
+
+/* 🔹 Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  font-size: 16px;
+  color: #555;
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+}
+
+.footer-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #25799a;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+  text-decoration: double;
+  color: green;
+}
+
+/* Dropdown Container */
+.select-container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Label Styling */
+.select-container label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222; /* Darker color for better readability */
+}
+
+/* Dropdown Styling */
+.select-container select {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #25799a; /* Green professional border */
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Dropdown Hover Effect */
+.select-container select:hover {
+  border-color: #318eb4; /* Slightly darker green */
+}
+
+/* Dropdown Focus Effect */
+.select-container select:focus {
+  border-color: #338aad;
+  box-shadow: 0 0 5px rgba(46, 125, 50, 0.5);
+}
+
+/* Dropdown Options */
+.select-container select option {
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #333;
+  padding: 10px;
+}

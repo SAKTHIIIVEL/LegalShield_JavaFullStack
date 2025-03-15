@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #e4aa54, #f3c27a);
+      transition: background 0.5s ease;
+      background-size: 200% 200%;
+      animation: gradientAnimation 10s ease infinite alternate;
+    }
+
+    body:hover {
+      background: linear-gradient(135deg, #e7b366, #eb583e);
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .contact-container {
+      background-color: #eee1e1;
+      padding: 20px;
+      border-radius: 18px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 600px;
+      height: 400px;
+      border: 2px solid #251f1f;
+      font-size: 20px;
+      margin-bottom: 30px;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      animation: slideIn 1s ease forwards; /* Added slide-in animation */
+      transform: translateX(-100%); /* Initial position off-screen */
+    }
+
+    @keyframes slideIn {
+      100% {
+        transform: translateX(0); /* Final position on-screen */
+      }
+    }
+
+    .contact-container:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      transition: color 0.3s ease;
+    }
+
+    .contact-container h2:hover {
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .form-group label:hover {
+      color: #555;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      border: 2px solid #241f1f;
+      border-radius: 4px;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #f3982f;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .submit-button {
+      background-color: #ffcc80;
+      color: #333;
+      padding: 10px 20px;
+      font-size: 14px;
+      border: 2px solid #2b2424;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      width: 100%;
+      margin-top: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background-color: #1866db;
+      transform: translateY(-2px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .submit-button:active {
+      transform: translateY(1px);
+    }
+
+    .note {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .note:hover {
+      color: #333;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+      </div>
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const formData = new FormData(this);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const message = formData.get('message');
+      console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+      document.getElementById('contactForm').reset();
+    });
+  </script>
+
+</body>
+</html>
